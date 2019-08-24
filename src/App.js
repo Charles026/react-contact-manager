@@ -1,6 +1,7 @@
-import React, { Component, Fragment } from 'react';
-import Welcome from './components/Welcome';
+import React, { Component } from 'react';
 import Navbar from './components/Navbar';
+import ContactList from './components/ContactList'
+
 
 
 
@@ -10,9 +11,7 @@ import Navbar from './components/Navbar';
     return (
       <div >
         <Navbar brand= 'contact manager'/>
-        <Welcome name = 'Elen' />
-        <Welcome name = 'Mike' />
-        <Welcome name = 'Kaiser' />
+        <ContactList />
       </div>
     )
   }
