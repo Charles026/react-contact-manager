@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Navbar from './components/Navbar';
 import ContactList from './components/ContactList'
 
@@ -9,10 +9,10 @@ import ContactList from './components/ContactList'
   render() {
     
     return (
-      <div >
+      <Fragment >
         <Navbar brand= 'contact manager'/>
         <ContactList />
-      </div>
+      </Fragment>
     )
   }
 }
