@@ -5,6 +5,7 @@ export class Contactlist extends Component {
         const {name,phonenumber,email} = this.props.contact;
         return (
             <div className='container'>
+
                 <ul className='list-group mb-3'>
                     <li className='list-group-item'>
                         <h4>{name} <i className="fas fa-sort-down"></i> </h4>
@@ -15,6 +16,7 @@ export class Contactlist extends Component {
                     <li className='list-group-item'>
                       PhoneNumber:  {phonenumber}
                     </li>
+
                 </ul>
             </div>
         )

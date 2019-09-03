@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
 const Navbar = (props)=>{
     const {branding} = props;
     return (
@@ -13,6 +14,7 @@ const Navbar = (props)=>{
            </ul>
        </nav>
     )
+
 }
 
 Navbar.defaultProps = {
