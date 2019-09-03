@@ -6,7 +6,7 @@ class Navbar extends Component {
         return (
             <div className = 'navbar navbar-dark bg-primary mb-4'>
                 <div className="container">
-                <a href="/" className = 'navbar-brand'>{brand}</a>
+                <a href="/" className = 'navbar-brand text-gray-200'>{brand}</a>
                 </div>
                 
             </div>
