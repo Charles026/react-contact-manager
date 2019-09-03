@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class Contactlist extends Component {
+ class Contactlist extends Component {
     render() {
         const {name,phonenumber,email} = this.props.contact;
         return (

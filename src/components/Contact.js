@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Contactlist from "./Contactlist";
+import Contactlist from "./ContactList";
 
 export class Contact extends Component {
   constructor() {
