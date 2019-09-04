@@ -2,17 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-const Navbar = (props)=>{
-    const {branding} = props;
+const Navbar = (props) => {
+
+    const { branding } = props;
+
     return (
-       <nav className = 'navbar navbar-dark bg-dark mb-3 '>
-           <a className='navbar-brand' href="/">{branding}</a>
-           <ul className='navbar-nav'>
-               <li className='nav-item'>
-                   <a className='nav-link' href="/">Home</a>
-                   </li>
-           </ul>
-       </nav>
+        <nav className='navbar navbar-dark bg-dark mb-3 '>
+            <h1  className='navbar-brand'>{branding}</h1>
+            <ul className='navbar-nav'>
+                <li className='nav-item'>
+                    <a className='nav-link' href="/">Home</a>
+                </li>
+            </ul>
+        </nav>
     )
 
 }

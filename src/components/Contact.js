@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import Contactlist from "./ContactList";
 
 export class Contact extends Component {
@@ -31,11 +31,11 @@ export class Contact extends Component {
   render() {
     const { contacts } = this.state;
     return (
-      <div>
+      <Fragment>
         {contacts.map(contact => (
           <Contactlist key={contact.id} contact={contact} />
         ))}
-      </div>
+      </Fragment>
     );
   }
 }
