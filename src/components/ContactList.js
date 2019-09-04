@@ -1,14 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 
 class Contactlist extends Component {
     constructor() {
         super();
         this.state = {
-            showContactInfo: true,
+            showContactInfo: false,
         }
     }
 
-    onShowClick = (e) => {
+    onShowClick = () => {
         this.setState({ showContactInfo: !this.state.showContactInfo })
     };
 
@@ -20,21 +20,25 @@ class Contactlist extends Component {
 
                 <ul className='list-group mb-3'>
                     <li className='list-group-item'>
-                        <h4>{name}
-                            <i onClick={this.onShowClick.bind(this)} className="fas fa-sort-down"></i>
-                        </h4>
+                        <span style={{ fontSize: '23px' }}>{name} </span>
+
+                        <i onClick={this.onShowClick.bind(this)} className="fas fa-sort-down" style={{ color: 'grey' }}></i>
+
+
+                        <i onClick={() => { console.log('hello') }} className="fas fa-trash-alt" style={{ float: 'right', color: '#e6515f' }}></i>
+
                     </li>
                     {this.state.showContactInfo ? (
-                        <ul className='list-group'>
+                        <Fragment>
                             <li className='list-group-item'>
                                 Email: {email}
                             </li>
                             <li className='list-group-item'>
                                 PhoneNumber:  {phonenumber}
                             </li>
-                        </ul>) : null}
+                        </Fragment>) : null}
                 </ul>
-            </div>
+            </div >
         )
     }
 }
